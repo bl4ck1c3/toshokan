@@ -30,3 +30,7 @@ Scenario: Do not export a record for a journal
    And I click on the first document
   Then I should not see the "Export to BibTeX" link 
    And I should not see the "Export to RIS" link
+
+Scenario: View Journal Subtitle
+  When I go to the record page for "Talent among Chinese Entrepreneurs at Home and Abroad"
+  Then I should see "New Horizons in Management"

@@ -140,6 +140,7 @@ class CatalogController < ApplicationController
     config.add_show_field 'dissertation_date_ssf', :helper_method => :render_dissertation_date, :format => ['thesis']
     config.add_show_field 'supervisor_ts', :helper_method => :render_author_links
     config.add_show_field 'series_title_ts'
+    config.add_show_field 'journal_subtitle_ts'
 
     # "fielded" search configuration. Used by pulldown among other places.
     # For supported keys in hash, see rdoc for Blacklight::SearchFields
